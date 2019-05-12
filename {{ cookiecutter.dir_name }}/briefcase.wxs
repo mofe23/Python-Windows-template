@@ -52,11 +52,6 @@
             </Directory>
         </Directory>
 
-        <Component Id="IAmA64BitBinary" Win64="yes" Directory="SystemFolder">
-          <Condition>VersionNT64</Condition>
-          <File Id="IAmTheBinary" KeyPath="yes" Source="file.dll">
-        </Component>
-
             <DirectoryRef Id="ApplicationProgramsFolder">
                     <Component
                             Id="ApplicationShortcuts"
