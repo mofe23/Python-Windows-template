@@ -40,6 +40,11 @@
             />
         </Upgrade>
 
+        <Component Id="IAmA64BitBinary" Win64="yes" Directory="SystemFolder">
+          <Condition>VersionNT64</Condition>
+          <File Id="IAmTheBinary" KeyPath="yes" Source="lib/libusb-1.0.dll">
+        </Component>
+
         <Directory Id="TARGETDIR" Name="SourceDir">
             <Directory Id="ProgramFilesFolder">
                 <Directory Id="AppDir" Name="{{ cookiecutter.formal_name }}">
